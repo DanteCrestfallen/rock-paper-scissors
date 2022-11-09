@@ -44,7 +44,7 @@ function playRound() {
 function playGame() {
     let rounds = prompt("How many rounds would you like to play?", 1);
     let result = cpuWins = playerWins = ties = 0;
-    for(i=1; i<=(+rounds); i++) {
+    for(let i=1; i<=(+rounds); i++) {
         result = playRound();
         if(result == 0) {break;}
         if(result == 1) {cpuWins = cpuWins + 1;} 
